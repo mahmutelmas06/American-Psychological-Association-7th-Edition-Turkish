@@ -294,6 +294,25 @@
       <term name="et-al">ve ark.</term>
       <term name="editor" form="short">Ed.</term>
       <term name="accessed">Erişim tarihi</term>
+      <term name="no date">t.y.</term>
+      <term name="and">ve</term>
+      <term name="in">içinde</term>
+      <term name="retrieved">erişildi</term>
+      <term name="from">adresinden</term>
+      <term name="month-01">Ocak</term>
+      <term name="month-02">Şubat</term>
+      <term name="month-03">Mart</term>
+      <term name="month-04">Nisan</term>
+      <term name="month-05">Mayıs</term>
+      <term name="month-06">Haziran</term>
+      <term name="month-07">Temmuz</term>
+      <term name="month-08">Ağustos</term>
+      <term name="month-09">Eylül</term>
+      <term name="month-10">Ekim</term>
+      <term name="month-11">Kasım</term>
+      <term name="month-12">Aralık</term>
+      <term name="volume" form="short">c.</term>
+      <term name="translator" form="short">çev.</term>
     </terms>
   </locale>
   <locale xml:lang="uk">
