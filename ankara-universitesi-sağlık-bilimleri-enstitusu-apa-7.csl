@@ -1,21 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<style class="in-text" version="1.0" et-al-min="3" et-al-use-first="1" page-range-format="expanded" demote-non-dropping-particle="never" default-locale="tr" xmlns="http://purl.org/net/xbiblio/csl">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/#) -->
+<?xml version="1.0" encoding="utf-8"?>
+<style class="in-text" version="1.0" and="text" et-al-min="3" et-al-use-first="1" et-al-subsequent-min="3" et-al-subsequent-use-first="1" et-al-use-last="true" page-range-format="expanded" demote-non-dropping-particle="never" default-locale="tr" xmlns="http://purl.org/net/xbiblio/csl">
   <info>
-    <title>Ankara Üniversitesi Sağlık Bilimleri Enstitüsü Apa 7</title>
-    <title-short>APA7</title-short>
-    <id>http://www.zotero.org/styles/ankara-universitesi-sağlık-bilimleri-enstitusu-apa-7</id>
-    <link href="http://www.zotero.org/styles/ankara-universitesi-sağlık-bilimleri-enstitusu-apa-7" rel="self"/>
-    <link href="http://sagbilens.ankara.edu.tr/dokumanlar/" rel="documentation"/>
+    <title>American Psychological Association 7th edition (Türkçe)</title>
+    <title-short>APA 7 (Tr)</title-short>
+    <id>http://www.zotero.org/styles/american-psychological-association-7th-edition</id>
+    <link href="http://www.zotero.org/styles/american-psychological-association-7th-edition" rel="self"/>
+    <link href="http://www.zotero.org/styles/apa-6th-edition" rel="template"/>
+    <link href="https://apastyle.apa.org/style-grammar-guidelines/references/examples" rel="documentation"/>
     <author>
+      <name>Brenton M. Wiernik</name>
+      <email>zotero@wiernik.org</email>
+    </author>
+    <contributor>
       <name>Mahmut ELMAS</name>
       <email>mahmutelmas@yaani.com</email>
-    </author>
-    <category citation-format="author-date" field="sport"/>
-    <category field="health"/>
+    </contributor>
+    <category citation-format="author-date"/>
+    <category field="psychology"/>
     <category field="generic-base"/>
-    <updated>2023-08-15T19:41:23+00:00</updated>
+    <category field="sport"/>
+    <category field="health"/>
+    <updated>2023-10-22T15:26:30+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+    <link href="http://sagbilens.ankara.edu.tr/dokumanlar/" rel="rules"/>
   </info>
   <locale xml:lang="en">
     <terms>
@@ -291,11 +298,11 @@
     <terms>
       <term name="letter">kişisel iletişim</term>
       <term name="letter" form="short">mektup</term>
-      <term name="et-al">ve ark.</term>
+      <term name="et-al" form="short">vd.</term>
+      <term name="and others">ve diğerleri</term>
       <term name="editor" form="short">Ed.</term>
-      <term name="accessed">Erişim tarihi</term>
-      <term name="no date">t.y.</term>
-      <term name="and">ve</term>
+      <term name="accessed">Erişim Tarihi</term>
+      <term name="editortranslator">Çeviri</term>
       <term name="in">içinde</term>
       <term name="retrieved">erişildi</term>
       <term name="from">adresinden</term>
@@ -312,7 +319,11 @@
       <term name="month-11">Kasım</term>
       <term name="month-12">Aralık</term>
       <term name="volume" form="short">c.</term>
-      <term name="translator" form="short">çev.</term>
+      <term name="translator" form="short">Çev.</term>
+      <term name="page">sayfa</term>
+      <term name="page" form="short">s:</term>
+      <term name="chapter">Bölüm</term>
+      <term name="no date" form="short">t.y</term>
     </terms>
   </locale>
   <locale xml:lang="uk">
@@ -340,8 +351,8 @@
     </terms>
   </locale>
   <macro name="author-bib">
-    <names variable="composer" font-variant="normal" delimiter=", ">
-      <name font-variant="uppercase" delimiter-precedes-last="always" initialize-with="" name-as-sort-order="all" sort-separator=" "/>
+    <names variable="composer" delimiter=", ">
+      <name and="text" delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all"/>
       <substitute>
         <names variable="author"/>
         <names variable="illustrator"/>
@@ -369,15 +380,15 @@
           </if>
         </choose>
         <names variable="editor" delimiter=", ">
-          <name font-variant="small-caps" delimiter-precedes-et-al="never" initialize-with="" name-as-sort-order="all" sort-separator=" "/>
-          <label form="short" text-case="title" prefix=" (" suffix=")"/>
+          <name delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all"/>
+          <label form="short" prefix=" (" suffix=")" text-case="title"/>
         </names>
         <names variable="editorial-director">
-          <name name-as-sort-order="all" and="symbol" sort-separator=", " initialize-with=". " delimiter=", " delimiter-precedes-last="always"/>
+          <name delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all"/>
           <label form="short" prefix=" (" suffix=")" text-case="title"/>
         </names>
         <names variable="collection-editor">
-          <name name-as-sort-order="all" and="symbol" sort-separator=", " initialize-with=". " delimiter=", " delimiter-precedes-last="always"/>
+          <name delimiter-precedes-last="always" initialize-with=". " name-as-sort-order="all"/>
           <label form="short" prefix=" (" suffix=")" text-case="title"/>
         </names>
         <choose>
@@ -584,7 +595,7 @@
   <macro name="title">
     <choose>
       <if type="post webpage" match="any">
-        <text variable="title" font-style="italic" font-variant="normal"/>
+        <text variable="title" font-style="italic"/>
       </if>
       <else-if variable="container-title" match="any">
         <text variable="title"/>
@@ -616,7 +627,7 @@
           </else-if>
           <else>
             <group delimiter=": " font-style="italic">
-              <text variable="title" text-case="capitalize-all"/>
+              <text variable="title"/>
               <choose>
                 <if is-numeric="volume" match="none">
                   <group delimiter=" ">
@@ -1365,7 +1376,7 @@
             </group>
           </if>
           <else>
-            <text variable="page" prefix="s.:"/>
+            <text variable="page"/>
           </else>
         </choose>
       </group>
@@ -1462,7 +1473,7 @@
             <if variable="issued status" match="none">
               <group delimiter=" ">
                 <text term="retrieved" text-case="capitalize-first"/>
-                <date form="text" variable="accessed" text-case="capitalize-first" suffix=","/>
+                <date variable="accessed" form="text" suffix=","/>
                 <text term="from"/>
               </group>
             </if>
@@ -1768,7 +1779,7 @@
   </citation>
   <bibliography hanging-indent="true" et-al-min="21" et-al-use-first="19" et-al-use-last="true" entry-spacing="0" line-spacing="2">
     <sort>
-      <key macro="author-bib"/>
+      <key macro="author-bib" names-min="3" names-use-first="1"/>
       <key macro="date-sort-group"/>
       <key macro="date-sort-date" sort="ascending"/>
       <key variable="status"/>
@@ -1789,7 +1800,7 @@
         <else>
           <group delimiter=" ">
             <group delimiter=". " suffix=".">
-              <text macro="author-bib" text-case="uppercase"/>
+              <text macro="author-bib"/>
               <text macro="date-bib"/>
               <text macro="title-and-descriptions"/>
               <text macro="container"/>
